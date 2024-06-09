@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Data Usage Monitor</h1>
+    <!-- Canvas element for displaying the data usage chart -->
+    <canvas id="usageChart"></canvas>
+    <div class="data-size">
+      <p>Consumed Data: <span id="dataConsumed">0 MB</span></p>
+    </div>
+    <div class="limit-section">
+      <label for="limit">Set Data Limit (MB):</label>
+      <input type="number" id="limit" placeholder="Enter limit in MB">
+      <button id="setLimit">Set Limit</button>
+    </div>
+    <div class="reset-section">
+      <button id="resetData">Reset Data</button>
+    </div>
+    <div class="close-section">
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+  <!-- Include Chart.js library -->
+  <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+  <!-- Include popup script -->
+  <script src="popup.js"></script>
+</body>
+</html>

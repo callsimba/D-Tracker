@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Data Usage Monitor",
+    "version": "1.0",
+    "description": "Tracks data usage while browsing and alerts users when they approach their data limits.",
+    "author": "Call Simba",
+    "permissions": [
+      "webRequest",
+      "storage",
+      "notifications"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_popup_size": { "width": 400, "height": 300 },
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+  
